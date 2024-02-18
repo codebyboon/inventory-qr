@@ -1,3 +1,6 @@
 *txt
 *.exe
 
+# Exclue all the generated QRs and Logs
+qr-output/
+logs/
