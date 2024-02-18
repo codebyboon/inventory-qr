@@ -1,11 +1,16 @@
 package main
 
 import (
-	"github.com/codebyboon/inventory-qr/internal/infra/qrcode/"
+	"log"
+
+	qr "github.com/codebyboon/inventory-qr/internal/infra/qrcode"
 )
 
 func main() {
-	err := qrcode.WriteFile("https://example.com", qrcode.Medium, 256, "qr.png")
+	err := qr.GenerateQRCode("https://example.com", "qr.png")
 	if err != nil {
+		log.Fatalf("Failed to generate QR code: %v", err)
 	}
+
+	log.Println("QR code generated successfully:", "./")
 }

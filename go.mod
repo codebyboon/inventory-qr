@@ -1,4 +1,4 @@
-module github.com/codebyboon/inventory-qr.git
+module github.com/codebyboon/inventory-qr
 
 go 1.21.6
 
